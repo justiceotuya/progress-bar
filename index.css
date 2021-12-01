@@ -1,0 +1,64 @@
+        .progress {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            ;
+            display: flex;
+            height: 25px;
+            font-size: 15px;
+            background-color: rgb(233, 236, 239);
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            max-width: 600px;
+        }
+
+        .progress-bar-striped {
+            background-image: linear-gradient(315deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+            background-size: 10px 10px;
+        }
+
+        .progress-value {
+            color: #4D5A34;
+            z-index: 3;
+        }
+
+        .progress-bar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transition: width 0.6s ease 0s;
+            border-radius: 12px;
+            position: absolute;
+            inset: 0;
+        }
+
+        .progress:nth-of-type(1) .progress-bar {
+            background-color: #B1D86F;
+            border: 1px solid #8CAD47
+        }
+
+        .progress:nth-of-type(2) .progress-bar {
+            background-color: #ED7766;
+            border: 1px solid #952711
+        }
+
+        .progress:nth-of-type(3) .progress-bar {
+            background-color: #fff;
+            border: 1px solid #AEAEAE
+        }
+
+        .progress:nth-of-type(4) .progress-bar {
+            background-color: #A3CDED;
+            border: 1px solid #71A3C4
+        }
+
+        .progress:nth-of-type(5) .progress-bar {
+            background-color: #F8D879;
+            border: 1px solid #A6852C
+        }

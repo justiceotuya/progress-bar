@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <link rel="stylesheet" href="index.css"> -->
+    </head>
+ 
+
+    <body>
+        <!-- <progress id=p max=100 value=50><span>50</span>%</progress></p> -->
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            <span class="progress-value"> 50%</span>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            <span class="progress-value"> 50%</span>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            <span class="progress-value"> 50%</span>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            <span class="progress-value"> 50%</span>
+        </div>
+
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+            <span class="progress-value"> 50%</span>
+        </div>
+
+
+
+
+        <button onclick="updateProgress()">Finish</button>
+        <script>
+            var progressBars = document.querySelectorAll('.progress-bar');
+            var progressValues = document.querySelectorAll('.progress-value');
+            function updateProgress() {
+                progressBars.forEach(progressBar => {
+                    progressBar.style.width = 'calc(100% - 2px)'
+                })
+                progressValues.forEach(progressValue => {
+                    progressValue.textContent = '100%'
+                })
+            }
+        </script>
+    </body>
+
+</html>
